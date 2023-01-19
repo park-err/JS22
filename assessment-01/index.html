@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function reset() {
+            document.querySelector('#image').style.width = '50vw';
+            document.querySelector('#par').style.color = 'black';
+        }
+        function change() {
+            document.querySelector("#par").innerHTML = "Changed!";
+        };
+    </script>
+    <title>Assessment 1</title>
+</head>
+<body>
+    <!--    Add three buttons with an attached 
+        script that will change the image displayed 
+        with the three images                       -->
+    <header><h1>JavaScript: Assessment 1</h1></header>
+    <main>
+        <div>
+            <button id="show" onclick="document.querySelector('#image').style.display='block';">Show</button>
+            <button id="show" onclick="document.querySelector('#image').style.display='none';">Hide</button>
+        </div>
+        <img id="image" src="./img/bee.jpg" alt="image">
+        <div class="image-change">
+            <button id="bee" class="change-image">Bee</button>
+            <button id="dog" class="change-image">Dog</button>
+            <button id="space" class="change-image">Space</button>
+        </div>
+        <p id="par"></p>
+        <div class="text-change">
+            <button id="change-text">Change Text</button>
+            <button id="call-head" onclick="change()">Change Text</button>
+        </div>
+        <div class="image-change">
+            <button id="img-width" onclick="document.querySelector('#image').style.width = '30vw';">Image Width</button>
+            <button id="text-color" onclick="document.querySelector('#par').style.color = 'red';">Text Color</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </main>
+    <script>
+        console.log("Welcome to the console!");
+        document.getElementById("par").innerHTML="This text was injected via JavaScript.";
+    </script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

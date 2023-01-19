@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: darkgrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+div {
+    margin-top: 30px;
+    margin-left: 25vw;
+    width: 50vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+button {
+    width: 20%;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+#bee {
+    background-color: blue;
+}
+
+#dog {
+    background-color: blue;
+}
+
+#space {
+    background-color: blue;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+img {
+    display: block;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    width: 50vw;
+}
+
+p {
+    padding: 15px;
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 50px;
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 25vw;
+}
