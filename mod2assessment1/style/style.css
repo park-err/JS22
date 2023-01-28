@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8b008b;
+}
+
+img {
+    width: 60px;
+    margin-left: 20px;
+}
+
+header, footer {
+    background-color: #41b941;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+form, .summary {
+    background-color: #e7dada;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.summary {
+    min-height: 30vh;
+}
+
+h2 {
+    margin: 10px;
+}
+
+label {
+    width: 50%;
+    margin-left: 50px;
+}
+
+input {
+    width: 60px;
+    margin: 30px;
+}
+
+button {
+    width: 10vw;
+    height: 40px;
+    background-color: #41b941;
+    border: none;
+    color: #e7dada;
+    margin-left: 65%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.sandwiches, .drinks, .desserts {
+    display: none;
+}
+
+.show-sub-sandwiches, .show-sub-drinks, .show-sub-desserts {
+    border-width: 2px;
+    border-style: solid;
+    width: 90px;
+    float: right;
+}
+
+.foot {
+    width: 100%;
+    text-align: center;
+}

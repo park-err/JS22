@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Veggie Food</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo">
+        <h1>Menu</h1>
+    </header>
+    <main>
+        <form>
+            <div class="input-sandwiches">
+                <h2>Sandwiches</h2>
+                <div class="input">
+                    <label for="cheezeburger">CheeZeBurger</label>
+                    <input type="number" id="cheezeburger" name="cheezeburger">
+                </div>
+                <div class="input">
+                    <label for="vegan-gyro">Vegan Gyro</label>
+                    <input type="number" id="vegan-gyro" name="vegan-gyro">
+                </div>
+                <div class="input">
+                    <label for="vegan-blt">Vegan BLT</label>
+                    <input type="number" id="vegan-blt" name="vegan-blt">    
+                </div>
+                <div class="input">
+                    <label for="vegan-club">Vegan Club</label>
+                    <input type="number" id="vegan-club" name="vegan-club">    
+                </div>
+                <div class="input">
+                    <label for="vegan-reuben">Vegan Reuben</label>
+                    <input type="number" id="vegan-reuben" name="vegan-reuben">    
+                </div>
+            </div>
+            <div class="input-drinks">
+                <h2>Drinks</h2>
+                <div class="input">
+                    <label for="water">Water</label>
+                    <input type="number" id="water" name="water">    
+                </div>
+                <div class="input">
+                    <label for="tea">Tea</label>
+                    <input type="number" id="tea" name="tea">    
+                </div>
+                <div class="input">
+                    <label for="soda">Soda</label>
+                    <input type="number" id="soda" name="soda">    
+                </div>
+                <div class="input">
+                    <label for="boba">Boba Tea</label>
+                    <input type="number" id="boba" name="boba">    
+                </div>
+                <div class="input">
+                    <label for="juice">Juice</label>
+                    <input type="number" id="juice" name="juice">    
+                </div>
+            </div>
+            <div class="input-desserts">
+                <h2>Desserts</h2>
+                <div class="input">
+                    <label for="vegan-shake">Vegan Shake</label>
+                    <input type="number" id="vegan-shake" name="vegan-shake">    
+                </div>
+                <div class="input">
+                    <label for="veg-ice-cream">Vegan Ice Cream</label>
+                    <input type="number" id="veg-ice-cream" name="veg-ice-cream">    
+                </div>
+                <div class="input">
+                    <label for="vegan-cake">Vegan Cake</label>
+                    <input type="number" id="vegan-cake" name="vegan-cake">    
+                </div>
+                <div class="input">
+                    <label for="vegan-brownie">Vegan Brownie</label>
+                    <input type="number" id="vegan-brownie" name="vegan-brownie">    
+                </div>
+                <div class="input">
+                    <label for="oreos">Oreos</label>
+                    <input type="number" id="oreos" name="oreos">    
+                </div>
+            </div>
+            <button id="submit">Get Summary</button>
+        </form>
+
+        <div class="summary">
+            <h3 class="title">Sandwiches</h3>
+            <p class="show-sub-sandwiches"></p>
+            <div class="sandwiches" id="display-burgers">
+                <p class="num" id="num-burgs"></p>
+                <p class="item">Cheezeburgers</p>
+            </div>
+            <div class="sandwiches" id="display-gyros">
+                <p class="num" id="num-gyros"></p>
+                <p class="item">Vegan Gyros</p>
+            </div>
+            <div class="sandwiches" id="display-blts">
+                <p class="num" id="num-blts"></p>
+                <p class="item">Vegan BLTs</p>
+            </div>
+            <div class="sandwiches" id="display-clubs">
+                <p class="num" id="num-clubs"></p>
+                <p class="item">Vegan Clubs</p>
+            </div>
+            <div class="sandwiches" id="display-reuben">
+                <p class="num" id="num-reubens"></p>
+                <p class="item">Vegan Reubens</p>
+            </div>
+            <h3 class="title">Drinks</h3>
+            <p class="show-sub-drinks"></p>
+            <div class="drinks" id="display-waters">
+                <p class="num" id="num-waters"></p>
+                <p class="item">Waters</p>
+            </div>
+            <div class="drinks" id="display-teas">
+                <p class="num" id="num-teas"></p>
+                <p class="item">Teas</p>
+            </div>
+            <div class="drinks" id="display-sodas">
+                <p class="num" id="num-sodas"></p>
+                <p class="item">Sodas</p>
+            </div>
+            <div class="drinks" id="display-bobas">
+                <p class="num" id="num-bobas"></p>
+                <p class="item">Boba Teas</p>
+            </div>
+            <div class="drinks" id="display-juices">
+                <p class="num" id="num-juices"></p>
+                <p class="item">Juices</p>
+            </div>
+            <h3 class="title">Desserts</h3>
+            <p class="show-sub-desserts"></p>
+            <div class="desserts" id="display-shakes">
+                <p class="num" id="num-shakes"></p>
+                <p class="item">Vegan Shakes</p>
+            </div>
+            <div class="desserts" id="display-ice-creams">
+                <p class="num" id="num-ice-creams"></p>
+                <p class="item">Vegan Ice Cream</p>
+            </div>
+            <div class="desserts" id="display-cakes">
+                <p class="num" id="num-cakes"></p>
+                <p class="item">Vegan Cake</p>
+            </div>
+            <div class="desserts" id="display-brownies">
+                <p class="num" id="num-brownies"></p>
+                <p class="item">Vegan Brownie</p>
+            </div>
+            <div class="desserts" id="display-oreos">
+                <p class="num" id="num-oreos"></p>
+                <p class="item">Oreos</p>
+            </div>
+        </div>
+    </main>
+    <footer><p class="foot">Parker Binnet</p></footer>
+
+    <script src="./script/order.js"></script>
+</body>
+</html>
