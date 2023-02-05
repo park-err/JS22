@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, footer {
+    background-color: greenyellow;
+    width: 100vw;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: 30px auto;
+    background-color: greenyellow;
+}
