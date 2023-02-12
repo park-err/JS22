@@ -14,7 +14,7 @@ function start() {
     const ternary = document.querySelector("#ternary");
 
     // print your name to the name heading
-    document.getElementById("name").innerHTML = "Your Name Here"
+    document.getElementById("name").innerHTML = "Parker Binnet"
         /*
             read/watch the associated reference and complete the directions in the comments.
 

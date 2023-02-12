@@ -166,7 +166,7 @@ function checks(item, num, display) {
     display.style.display = "block";
 }
 
-submit.addEventListener("click", function(e) {
+submit.addEventListener("onclick", function(e) {
     e.preventDefault();
     console.log("Working........");
     let sandwichSub = 0; let drinkSub = 0; let dessertSub = 0;
