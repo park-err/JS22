@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #202020;
+    --color2: #4e3f3f;
+    --color3: #3300aa;
+    --hover: #d4b9b9;
+    --equals: #00920c;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: var(--color1);
+    color: #ffffff;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    background-color: var(--hover);
+    color: #000000;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: #ffffff;
+    padding: 10px;
+}
+
+#display {
+    font-size: 40px;
+}
+
+#last-operation, #display {
+    text-align: right;
+}
+
+#last-operation {
+    min-height: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom-style: solid;
+}
+
+td {
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+td:hover {
+    background-color: var(--hover);
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.function {
+    background-color: var(--color1);
+}
+
+.num {
+    background-color: var(--color2);
+}
+
+.operation {
+    background-color: var(--color3);
+}
+
+.clear {
+    background-color: var(--color3);
+    border: none;
+    border-left-style: solid;
+}
+
+#clear {
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+#equals {
+    background-color: var(--equals);
+}
+
+#equals:hover {
+    background-color: var(--hover);
+    color: var(--color1);
+}

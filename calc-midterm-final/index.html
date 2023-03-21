@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header><h1 class="title">Calculator</h1></header>
+    <main>
+        <section class="display">
+            <p id="last-operation"></p>
+            <p id="display">0</p>
+        </section>
+
+        <!--    buttons     -->
+        <table>
+            <tr>
+                <td id="factorial" class="function">x!</td>
+                <td id="lnx" class="function">lnx</td>
+                <td id="sin" class="function">sinx</td>
+                <td id="cos" class="function">cosx</td>
+                <td id="tan" class="function">tanx</td>
+            </tr>
+            <tr>
+                <td id="pi" class="function">&#960;</td>
+                <td id="e" class="function">e</td>
+                <td id="ee" class="function">EE</td>
+                <td id="exp" class="function">x<sup>y</sup></td>
+                <td id="sqroot" class="function">&#8730;</td>
+            </tr>
+            <tr>
+                <td id="percent" class="function">%</td>
+                <td id="log" class="function">log<sub>y</sub>x</td>
+                <td id="open-par" class="function">(</td>
+                <td id="closed-par" class="function">)</td>
+                <td id="divide" class="operation">&#247;</td>
+            </tr>
+            <tr>
+                <td id="clear1" class="clear"></td>
+                <td id="seven" class="num">7</td>
+                <td id="eight" class="num">8</td>
+                <td id="nine" class="num">9</td>
+                <td id="times" class="operation">&times;</td>
+            </tr>
+            <tr>
+                <td id="clear2" class="clear">Clear</td>
+                <td id="four" class="num">4</td>
+                <td id="five" class="num">5</td>
+                <td id="six" class="num">6</td>
+                <td id="minus" class="operation">-</td>
+            </tr>
+            <tr>
+                <td id="clear3" class="clear"></td>
+                <td id="one" class="num">1</td>
+                <td id="two" class="num">2</td>
+                <td id="three" class="num">3</td>
+                <td id="plus" class="operation">+</td>
+            </tr>
+            <tr>
+                <td id="clear4" class="clear"></td>
+                <td id="plus-minus" class="function">+/-</td>
+                <td id="zero" class="num">0</td>
+                <td id="decimal" class="function">.</td>
+                <td id="equals" class="operation">=</td>
+            </tr>
+        </table>
+
+    </main>
+    <footer><p>&copy;Parker Binnet 2023</p></footer>
+
+    <script src="./script/styling.js"></script>
+    <script src="./script/calc-app.js"></script>
+</body>
+</html>
