@@ -1,0 +1,206 @@
+
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul, dl {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --green: #474935;
+    --blue: #7BA098;
+    --turquoise: #98CBB4;
+    --mint: #B5FED9;
+    --font: 'Merriweather', serif;
+}
+
+
+/* ----------------- Styling -------------------- */
+
+body {
+    font-family: var(--font);
+    background-color: var(--green);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/*----------------- Menu ----------------------*/
+
+.menu {
+    display: none;
+    background-color: var(--turquoise);
+	height: 100vh;
+    transition: all 0.5s;
+}
+
+.box, .line-one, .line-two {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--mint);
+}
+
+.box {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.box .line-one {
+    width: 35px;
+    margin-top: 16px;
+    transform: rotate(45deg);
+}
+
+.box .line-two {
+    width: 35px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    transform: rotate(135deg);
+}
+
+ul {
+	position: absolute;
+	top: 15vh;
+    left: 25vw;
+}
+
+li {
+    margin-top: 30px;
+    width: 300px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--mint);
+    border-bottom-width: 2px;
+    transition: all 0.5s;
+}
+
+li:hover {
+    width: 400px;
+    cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	font-size: 3.8rem;
+    color: var(--green);
+}
+
+/*------------ Page -------------*/
+
+main {
+    display: block;
+    transition: all .5s;
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+}
+
+#menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+}
+
+#menu-button:hover {
+    cursor: pointer;
+}
+
+.menu-bar {
+    width: 35px;
+    height: 2px;
+    background-color: var(--turquoise);
+    margin: 6px 0;
+}
+
+h1 {
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+    width: 20vw;
+    font-size: 8rem;
+    color: var(--mint);
+}
+
+/********tablet**********/
+
+@media screen and (max-width: 1007px) {
+    li:hover {
+        width: 300px;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+/*********phone**********/
+
+@media screen and (max-width: 640px) {
+    ul {
+        left: 15vw;
+    }
+    li {
+        text-align: center;
+    }
+    li:hover {
+        width: 300px;
+    }
+    h1 {
+        top: 30vh;
+        left: 5vw;
+        font-size: 6rem;
+    }
+}

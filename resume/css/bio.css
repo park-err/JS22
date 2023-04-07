@@ -1,0 +1,55 @@
+/*          menu            */
+
+.menu {
+    display: none;
+}
+
+
+/*          page            */
+
+body {
+    background-color: var(--blue);
+    overflow-y: scroll;
+}
+
+h3 {
+    position: absolute;
+    top: 5vh;
+    color: var(--mint);
+    font-size: 3rem;
+    margin-left: 10vw;
+}
+
+article {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    background-color: var(--mint);
+    height: auto;
+    width: 40vw;
+    padding: 20px;;
+}
+
+p {
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+p#last {
+    margin-bottom: 0;
+}
+
+aside {
+    position: absolute;
+    top: 25vh;
+    right: 0;
+}
+
+@media screen and (max-width: 980px) {
+    article {
+        width: 80vw;
+    }
+    aside {
+        display: none;
+    }
+}
