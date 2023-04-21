@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>jQuery HTML</title>
+</head>
+<body class="light">
+
+    <h1 class="light">Subscriber Information</h1>
+
+    <!--buttons with two style options for the page (light and dark or some other variations)-->
+    <div id="buttons" class="light">
+        <button id="light" class="light">Light mode</button>
+        <button id="dark" class="light">Dark Mode</button>
+        <button id="increase" class="light">Increase Font</button>
+        <button id="decrease" class="light">Decrease Font</button>
+    </div>
+
+    <!--a form that has at least five fields-->
+    <form class="light">
+        <label for="fname" class="light">First Name</label>
+        <input type="text" id="fname" name="fname" class="light">
+        <label for="lname" class="light">Last Name</label>
+        <input type="text" id="lname" name="lname" class="light">
+        <label for="phone" class="light">Phone Number</label>
+        <input type="text" id="phone" name="phone" class="light">
+        <label for="email" class="light">Email</label>
+        <input type="text" id="email" name="email" class="light">
+        <label for="zip" class="light">Zip Code</label>
+        <input type="text" id="zip" name="zip" class="light">
+        <input class="light" type="submit" value="Submit">
+    </form>
+
+    <p id="results"></p>
+
+    <script src="./app.js"></script>
+</body>
