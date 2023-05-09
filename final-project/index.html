@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Lab - Factors Affecting Reaction Rates</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Factors Affecting Reaction Rates</h1>
+    </header>
+    <main>
+        <h2>Introduction</h2>
+        <p id="intro">
+            What factors affect the reate of a reaction? 
+            In this laboratory experiment, I studied the 
+            effect of concentration, temperature, and a 
+            catalyst on the reaction rate.
+        </p>
+        <section id="setup">
+            <h2>Materials</h2>
+            <ul id="materials">
+                <li>Potassium iodate solution, 0.05 M KIO<sub>3</sub>, 28 mL</li>
+                <li>Sodium meta-bisulfate solution, 0.05 M Na<sub>2</sub>S<sub>2</sub>O<sub>5</sub>, 10 mL</li>
+                <li>Ice</li>
+                <li>Starch solution, 10 mL</li>
+                <li>Sulfuric Acid, 0.1 M H<sub>2</sub>SO<sub>4</sub>, 1 mL</li>
+                <li>5 100 mL beakers</li>
+                <li>1 250 mL beaker</li>
+                <li>2 10 mL graduated cylinders</li>
+                <li>2 25 mL graduated cylinders</li>
+                <li>Hot plate</li>
+                <li>Microplate</li>
+                <li>White paper</li>
+                <li>Stirring rod</li>
+                <li>2 syringes</li>
+                <li>Thermometer</li>
+            </ul>
+
+            <h2>Procedure</h2>
+            <h3>Concentration</h3>
+            <ol class="prep">
+                <li>Mix together 15 mL of sodium meta-bisulfate and 15 mL of starch solution</li>
+                <li>
+                    Prepare microplate: put 5 mL KIO<sub>3</sub> 
+                    in well 1, 4 mL KIO<sub>3</sub> in well 2, 3 mL 
+                    KIO<sub>3</sub> in well 3, 2 mL KIO<sub>3</sub> 
+                    in well 4, and 1 mL KIO<sub>3</sub> in well 5.
+                </li>
+                <li>
+                    In the microplate, use deionized water to fill the 
+                    all of the wells to 5 mL. Well 1 should have no water, 
+                    well 2 should have 1 mL, etc. Record temperature for 
+                    later section.
+                </li>
+                <li>Stir each well with a stirring rod.</li>
+                <li>
+                    Add 2 mL of sodium meta-bisulfate/starch solution 
+                    mixture to each well, and time each reaction.
+                </li>
+            </ol>
+            <h3>Temperature</h3>
+            <ol class="prep">
+                <li>Empty the microplate</li>
+                <li>Prepare a hot bath and cold bath</li>
+                <li>Put 5 mL KIO<sub>3</sub> in a hot bath and 5 mL KIO<sub>3</sub> in a cold bath</li>
+                <li>Put the KIO<sub>3</sub> in the well plates and record the temperatures</li>
+                <li>Add 2 mL of meta-bisulfate/starch solution and record reaction times</li>
+            </ol>
+            <h3>Catalyst</h3>
+            <ol class="prep">
+                <li>Empty the microplate</li>
+                <li>Prepare two wells with 1 mL of KIO<sub>3</sub> each</li>
+                <li>Add 4 mL of deionized water to well 1, and 3 mL of deioinized water to well 2. Stir.</li>
+                <li>Add 1 mL of H<sub>2</sub>SO<sub>4</sub> to the well 2.</li>
+                <li>Add 2 mL of meta-bisulfate/starch solution and record reaction times</li>            
+            </ol>
+        </section>
+        <section id="data">
+            <h2>Data</h2>
+            <h3>Data Table 1: Changing the Concentration of the Reactants</h3>
+            <table id="data-table-1">
+                <tr>
+                    <td class="th"></td>
+                    <td class="th">Well 1</td>
+                    <td class="th">Well 2</td>
+                    <td class="th">Well 3</td>
+                    <td class="th">Well 4</td>
+                    <td class="th">Well 5</td>
+                </tr>
+                <tr>
+                    <td class="th">[KIO<sub>3</sub>]</td>
+                    <td>0.05 M</td>
+                    <td>0.04 M</td>
+                    <td>0.03 M</td>
+                    <td>0.02 M</td>
+                    <td>0.01 M</td>
+                </tr>
+                <tr>
+                    <td class="th">Reaction time (sec)</td>
+                    <td>9.21</td>
+                    <td>10.13</td>
+                    <td>13.29</td>
+                    <td>19.42</td>
+                    <td>36.73</td>
+                </tr>
+            </table>
+
+            <h3>Data Chart 1: Changing the Concentration of the Reactants</h3>
+            <div class="chart">
+                <canvas id="data-chart-1"></canvas>
+            </div>
+
+            <h3>Data Table 2: Changing the Temperature of the Reactants</h3>
+            <table id="data-table-2">
+                <tr>
+                    <td class="th"></td>
+                    <td class="th">Cold</td>
+                    <td class="th">Room Temp</td>
+                    <td class="th">Hot</td>
+                </tr>
+                <tr>
+                    <td class="th">Temperature &deg;C</td>
+                    <td>11.7</td>
+                    <td>21.7</td>
+                    <td>62.3</td>
+                </tr>
+                <tr>
+                    <td class="th">Reation time (sec)</td>
+                    <td>9.86</td>
+                    <td>9.21</td>
+                    <td>4.07</td>
+                </tr>
+            </table>
+
+            <h3>Data Chart 2: Changing the Temperature of the Reactants</h3>
+            <div class="chart">
+                <canvas id="data-chart-2"></canvas>
+            </div>
+
+            <h3>Data Table 3: Adding a Catalyst</h3>
+            <table id="data-table-3">
+                <tr>
+                    <td class="th"></td>
+                    <td class="th">Well 1</td>
+                    <td class="th">Well 2</td>
+                </tr>
+                <tr>
+                    <td class="th">KIO<sub>3</sub> (mL)</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="th">Water (mL)</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td class="th">H<sub>2</sub>SO<sub>4</sub> (mL)</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="th">Reaction time (sec)</td>
+                    <td>36.73</td>
+                    <td>2.40</td>
+                </tr>
+            </table>
+
+            <h3>Data Chart 3: Adding a Catalyst</h3>
+            <div class="chart">
+                <canvas id="data-chart-3"></canvas>
+            </div>
+        </section>
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                The concentration and the temperature of the reactants have a linear relationship 
+                with the reaction rate. Furthermore, adding a catalyst to the reaction 
+                causes the reaction rate to increase as well.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Study Conducted by Parker Binnet</p>
+    </footer>
+
+    <script src="./script/data.js"></script>
+    <script src="./script/chart.js"></script>
+</body>
+</html>
